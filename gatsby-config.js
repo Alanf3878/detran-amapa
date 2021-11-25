@@ -10,7 +10,7 @@ module.exports = {
       options: {
         typeName: "detran",
         fieldName: "detran", 
-        url: "https://api.graphcms.com/simple/v1/swapi",
+        url: "https://api-us-east-1.graphcms.com/v2/ckwdl6iv605hl01z379ev4dyg/master",
       },
     },
   ],

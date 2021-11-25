@@ -1,21 +1,17 @@
 
 import React from 'react';
 import * as S from "./style"
-
+import { graphql, useStaticQuery } from 'gatsby';
+import  Nav  from './nav';
+import Section from './section'
+import Container from './container'
 const Header = () => {
   return (
-   <S.Header>
-     
-     
-             <S.Boxitem>
-                 <li>HOME</li>
-                 <li>REDE SOCIAIS</li>
-                 <li>SOBRE</li>
-                 <li>CONTATO</li>
-             </S.Boxitem>
-      
-     
-   </S.Header>
+   <div>
+     <Nav/>
+     <Section/>
+     <Container/>
+   </div>
   );
 };
 

@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: "gatsby-source-graphql",
       options: {
-        typeName: "detran",
-        fieldName: "detran", 
+        typeName: "detrandata",
+        fieldName: "detrandata", 
         url: "https://api-us-east-1.graphcms.com/v2/ckwdl6iv605hl01z379ev4dyg/master",
       },
     },

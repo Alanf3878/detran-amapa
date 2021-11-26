@@ -75,12 +75,96 @@ export const banner = styled.img`
 // Section das Notícias
 export const SectionNews = styled.section`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: auato;
     background-color: #EBEBEB;
-    padding: 3vw;
+    padding: 3vw 0vw 3vw 1vw;
     margin-bottom: 3vw;
+    border-radius: 1.667vw;
+`
+export const imgbox = styled.div`
+    width: 39.167vw;    
+    height: 25vw;
+    background-image: url(${props => props.back});
+    border-radius: 1.667vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+`
+export const Newstext = styled.div`
+    width: 39.167vw;    
+    height: 25vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    color: #141745;
+    
+`
+export const Newssub = styled.h2`
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: .3vw;
+`
+export const Newsp = styled.p`
+    font-size: 1.7vw;
+    font-weight: lighter;
+`
+export const divider = styled.div`
+    width: 36vw;
+    height: .2vw;
+    background-color: #141745;
+    border-radius: 1.667vw;
+    margin: 1vw 0vw 1vw 0vw;
+`
+export const column = styled.div`
+    disply: flex;
+    flex-direction: column;
+`
+export const Imgtext = styled.div`
+    width: 100%;
+    height: 50%;
+    background-color: #fff; 
+    border-radius: 0vw 0vw 1.667vw 1.667vw;
+    position: relative;
+    overflow: hidden;
+    color: #141745;
+`
+export const ImgSubtitle = styled.h1`
+    font-size: 1.7vw;
+    padding: 1vw;
+`
+export const ImgParagraph = styled.p`
+    font-size: 1.3vw;
+    padding: 0vw 1vw 1vw 1vw;
+`
+export const ImgBtn = styled.button`
+    width: 100%;
+    height: 4.5vw;
+    position: relative;
+    bottom: 55.8vw;
+    color: #141745;
+    background-color: #fff;
+    font-size: 1.5vw;
+    font-weight: bold;
+`
+export const Imgdivider = styled.div`
+    width: 100%;
+    height: 5px;
+    background-color: #141745;
+    z-index: 1;
+    position: relative;
+    bottom: 55vw;
+    opacity: .8;
+`
+export const Btn = styled.button`
+    width: 100%;
+    height: 4.5vw;
+    color: #141745;
+    font-size: 2vw;
+    font-weight: bold;
+    background-color: transparent;
 `
 
 // Display do vídeo
@@ -167,28 +251,31 @@ export const BoxInteractive = styled.div`
 export const rectangletop = styled.img`
     width: 7vw;
     position: relative;
-    top: .6vw;
+    top: -.5vw;
+    left: 1.2vw;
 `
 export const rectanglebottom = styled.img`
     width: 7vw;
     transform: rotate(180deg);
     position: relative;
-    top: .662vw;
+    top: .7vw;
+    left: 1.2vw;
 `
 export const arrowtop = styled.img`
     width: 2.5vw;
     position: relative;
-    bottom: 1.5vw;
-    
+    bottom: 1.2vw;
+    right: 3.6vw;
 `
 export const arrowbottom = styled.img`
     width: 2.5vw;
     transform: rotate(180deg);
     position: relative;
-    top: -1vw;
+    top: .2vw;
+    left: -3.6vw;
 `
 
-// Sextion dos icons e mapa
+// Section dos icons e mapa
 export const SectionIcons = styled.section`
     display: flex;
     flex-direction: row;
@@ -198,7 +285,6 @@ export const WARNING = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 `
 export const SocialIcons = styled.div`
     display: flex;
@@ -210,7 +296,6 @@ export const SocialIcons = styled.div`
 `
 export const iconbottom = styled.img`
     width: 9vw;
-
 `
 export const iconback = styled.img`
     width: 9vw;
@@ -256,15 +341,16 @@ export const paragraph = styled.p`
     font-size: 1vw;
     color: #fff;
     width: 16vw;
-    opacity: .6;
-    margin: 0vw 4vw 0vw 4vw
+    opacity: .8;
+    margin: 0vw 4vw 0vw 4vw;
+    line-height: 1.2;
 `
 export const Logoleft= styled.img`
     width: 20vw;
     margin: 0vw 3vw 0vw 3vw;
 `
 export const Logoright= styled.img`
-    width: 20vw;
+    width: 18vw;
     margin: 0vw 0vw 0vw 4vw;
 `
 export const TopMaster = styled.div`
@@ -274,6 +360,7 @@ export const TopMaster = styled.div`
     justify-content: space-around;
 `
 export const button = styled.button`
-outline: none;
-border: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
 `

@@ -19,11 +19,6 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
-button {
-  &:hover {
-    transform: scale(1.1);
-  }
-
 `
 
 const Index = () => {

@@ -9,6 +9,9 @@ a {
   text-decoration: none;
   color: #2680EB;
 }
+body { 
+  font-family: "Open Sans", sans-serif;
+}
 button {
   outiline: none;
   border: none;
@@ -141,7 +144,49 @@ const {toptitle, boxtext1, boxtext2, boxtext3, earicon, mailicon, telicon, banne
         </S.SectionTop>
 
         <S.SectionNews>
-           
+          <S.Title>{titlenews}</S.Title>
+          <S.Row>
+            <S.imgbox back={taxiimage.url}>
+              <S.Imgtext>
+              <S.ImgSubtitle>{taxisubtitle}</S.ImgSubtitle>
+              <S.ImgParagraph>{taxiparagraph}</S.ImgParagraph>
+              <S.Imgdivider></S.Imgdivider>
+              <S.ImgBtn>{btnshowmore}</S.ImgBtn>
+              </S.Imgtext>
+            </S.imgbox>
+            <S.column>
+            <S.Newstext>
+              <S.Newssub>{newssubtitle}</S.Newssub>
+              <S.Newsp>{newsparagraph}</S.Newsp>
+              <S.divider></S.divider>
+              <S.Newssub>{newssubtitle}</S.Newssub>
+              <S.Newsp>{newsparagraph}</S.Newsp>
+              <S.divider></S.divider>
+              <S.Newssub>{newssubtitle}</S.Newssub>
+              <S.Newsp>{newsparagraph}</S.Newsp>
+              <S.divider></S.divider>
+            </S.Newstext>
+            </S.column>
+          </S.Row>
+          <S.Row>
+          <S.imgbox back={taxiimage.url}>
+              <S.Imgtext>
+              <S.ImgSubtitle>{taxisubtitle}</S.ImgSubtitle>
+              <S.ImgParagraph>{taxiparagraph}</S.ImgParagraph>
+              <S.Imgdivider></S.Imgdivider>
+              <S.ImgBtn>{btnshowmore}</S.ImgBtn>
+              </S.Imgtext>
+            </S.imgbox>
+            <S.imgbox back={taxiimage.url}>
+              <S.Imgtext>
+              <S.ImgSubtitle>{taxisubtitle}</S.ImgSubtitle>
+              <S.ImgParagraph>{taxiparagraph}</S.ImgParagraph>
+              <S.Imgdivider></S.Imgdivider>
+              <S.ImgBtn>{btnshowmore}</S.ImgBtn>
+              </S.Imgtext>
+            </S.imgbox>
+          </S.Row>  
+          <S.Btn>{btnshowmore}</S.Btn>
         </S.SectionNews>
 
         <S.SectionChannel>
@@ -189,8 +234,8 @@ const {toptitle, boxtext1, boxtext2, boxtext3, earicon, mailicon, telicon, banne
               <S.Subtitle>{editais}</S.Subtitle>
             </S.line>
             <S.BoxInteractive>
-              <button><S.rectangletop src={orangerectangle.url} alt="orange rectangle" /></button>
-              <S.arrowtop src={arrow.url} alt="arrow" /> 
+              <S.button><S.rectangletop src={orangerectangle.url} alt="orange rectangle" />
+              <S.arrowtop src={arrow.url} alt="arrow" /></S.button>
               <S.ul>
                 <S.line>
                     <S.icon src={arrowicon.url} alt="arrow icon" />
@@ -209,8 +254,8 @@ const {toptitle, boxtext1, boxtext2, boxtext3, earicon, mailicon, telicon, banne
                     <a href="#"><S.Li2>{editaltext}</S.Li2></a>
                 </S.line>
               </S.ul>
-              <button><S.rectanglebottom src={orangerectangle.url} alt="orange" /></button>
-              <S.arrowbottom src={arrow.url} alt="arrow" /> 
+              <S.button><S.rectanglebottom src={orangerectangle.url} alt="orange" />
+              <S.arrowbottom src={arrow.url} alt="arrow" /> </S.button>
 
             </S.BoxInteractive>
           </S.Boxright>

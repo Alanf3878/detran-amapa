@@ -44,6 +44,11 @@ export const BoxText = styled.div`
     height: 12vw;
     border-radius: 1.667vw;
     margin: 0vw 2vw 0vw 2vw;
+    cursor: pointer;
+    &: hover{
+        transform: scale(1.1);
+        transition: .5s ease-in-out;
+    }
 `
 export const SACicon = styled.img`
     width: 2vw;
@@ -87,6 +92,7 @@ export const imgbox = styled.div`
     width: 39.167vw;    
     height: 25vw;
     background-image: url(${props => props.back});
+    background-size: cover;
     border-radius: 1.667vw;
     margin-right: 2vw;
     display: flex;
@@ -142,21 +148,27 @@ export const ImgParagraph = styled.p`
 export const ImgBtn = styled.button`
     width: 100%;
     height: 4.5vw;
-    position: relative;
-    bottom: 55.8vw;
+    position: absolute;
+    bottom: 0vw;
     color: #141745;
     background-color: #fff;
     font-size: 1.5vw;
     font-weight: bold;
+    border-top: .26vw solid #141745;
+    &: hover{ 
+        transform: scale(1.1);
+        transition: .5s ease-in-out;
+    }
 `
 export const Imgdivider = styled.div`
     width: 100%;
-    height: 5px;
+    height: .26vw;
     background-color: #141745;
     z-index: 1;
-    position: relative;
+    position: absolute;
     bottom: 55vw;
     opacity: .8;
+    display: none;
 `
 export const Btn = styled.button`
     width: 100%;
@@ -165,6 +177,10 @@ export const Btn = styled.button`
     font-size: 2vw;
     font-weight: bold;
     background-color: transparent;
+    &: hover{ 
+        transform: scale(1.1);
+        transition: .5s ease-in-out;
+    }
 `
 
 // Display do vídeo
@@ -266,6 +282,11 @@ export const arrowtop = styled.img`
     position: relative;
     bottom: 1.2vw;
     right: 3.6vw;
+    &: hover{
+        transform: rotate(360deg);
+        transition: .5s ease-in-out;
+        
+    }
 `
 export const arrowbottom = styled.img`
     width: 2.5vw;
@@ -273,6 +294,10 @@ export const arrowbottom = styled.img`
     position: relative;
     top: .2vw;
     left: -3.6vw;
+    &: hover{
+        transition: .5s ease-in-out;
+        transform: rotate(-180deg);
+    }
 `
 
 // Section dos icons e mapa
